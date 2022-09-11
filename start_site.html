@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input id="name" type="text" alt="name" placeholder="Имя" required />
+      <input id="email" type="e-mail" alt="E-mail" placeholder="E-mail" required/>
+      <label> <input id="checkbox" type="checkbox" name="checkbox1" value="0001"><span id></span>Checkbox label text</label>
+
+      <input type="submit" style="height: auto" onclick="SendMessage()" />
+    </form>
+
+    <script type="text/javascript">
+      function SendMessage() {
+        const inputName = document.getElementById("name");
+        const inputEmail = document.getElementById("email");
+      
+        if (inputName.value == "" && inputEmail.value == "" && inputCheckbox.checked == "false") {
+          inputName.style.borderColor = "red";
+          inputEmail.style.borderColor = "red";
+        
+        }
+      }
+    </script>
+      
+    <style type="css"></style>
+
+
+    <footer>Я подвал</footer>
+  
+  </body>
+</html>
