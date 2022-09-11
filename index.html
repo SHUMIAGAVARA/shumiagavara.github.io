@@ -19,17 +19,15 @@
       function SendMessage() {
         const inputName = document.getElementById("name");
         const inputEmail = document.getElementById("email");
-      
+        const inputCheckbox = document.getElementById("checkbox");
         if (inputName.value == "" && inputEmail.value == "" && inputCheckbox.checked == "false") {
           inputName.style.borderColor = "red";
           inputEmail.style.borderColor = "red";
-        
+          inputCheckbox.style.borderColor = "red";
         }
       }
     </script>
       
-    <style type="css"></style>
-
 
     <footer>Я подвал</footer>
   
